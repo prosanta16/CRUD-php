@@ -81,12 +81,12 @@ $results=mysqli_query($conn,$query);
                                 <td><?php echo $row['name']; ?></td>
                                 <td><?php echo $row['email']; ?></td>
                                 <td><?php echo $row['phone']; ?></td>
-                                <td><?php echo $row['image']; ?></img></td>
+                                <td><img src="<?php echo "userImages/".$row['image'];?>" width="100px" alt="Image"></td>
                                 <td>
-                                    <a href="#">Edit</a>
+                                    <a href="#" class="btn btn-info">Edit</a>
                                 </td>
                                 <td>
-                                    <a href="#">Delete</a>
+                                    <a href="#" class="btn btn-danger">Delete</a>
                                 </td>
                             </tr>
                             <?php } ?>
